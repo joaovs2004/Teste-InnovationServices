@@ -2,9 +2,8 @@
   "name": "teste-back-end",
   "version": "1.0.0",
   "description": "Teste para Desenvolvedor jr na Innovation Services",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx tsc && node dist/app.js"
   },
   "keywords": [],
   "author": "",
