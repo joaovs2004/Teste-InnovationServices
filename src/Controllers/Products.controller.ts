@@ -1,12 +1,6 @@
 import { Request, Response } from "express";
 import { validationResult } from "express-validator";
-import db from "../Configs/db";
 import Products from "../Models/Products";
-
-// I need to synchronize the database, because if it doesn't exist, the queries will give an error
-db.sync().then(() => {
-    console.log("Database synchronized");
-});
 
 const listAllProducts = (req: Request, res: Response) => {
     Products.findAll().then((products) => {
